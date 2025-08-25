@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS选择器</title>
+    <style>
+        /* 元素选择器 */
+        h2 {
+            color: red;
+        }
+
+        /* 类选择器 */
+        .class-selector {
+            color: green;
+        }
+
+        #id-selector {
+            color: blue;
+        }
+
+        /* 通用选择器 */
+        * {
+            font-style: italic;/*字体斜体*/
+            font-weight: 300;/*字体细*/
+        }
+
+        /* 子类选择器 */
+        .father > .son {
+            color: orange;
+        }
+
+        /* 后代选择器 */
+        .father p {
+            color: purple;
+        }
+
+        /* 兄弟选择器,似乎没啥用 */
+        h5 + p {
+            color: pink;
+        }
+
+        /* 伪类选择器 */
+        #pseudo-class:hover {/*不要忘了#*/
+            background-color: rgb(5, 247, 211);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>CSS选择器学习</h1>
+
+    <h2>元素选择器</h2>
+
+    <h3 class="class-selector">类选择器</h3>
+
+    <h4 id="id-selector">ID选择器</h4>
+
+    <p>这是一个通用选择器的段落。</p>
+
+    <div class="father">
+        <p class="son">这是一个子类选择器的段落。</p>
+        <div class="grandson">
+            <p>这是一个后代选择器的段落。</p><!--后代选择器包含了子代元素-->
+        </div>
+    </div>
+
+    <p>这是一个普通的段落。</p>
+    <h5>这是一个相邻兄弟选择器的段落。</h5>
+    <p>这是另一个普通的段落。</p>
+
+    <p id="pseudo-class">这是一个伪类选择器的段落。</p>
+
+    <p>这是一个伪元素选择器的段落。</p>
+
+
+
+
+</body>
+</html>
