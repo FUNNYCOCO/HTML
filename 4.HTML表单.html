@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML表单</title>
+</head>
+<body>
+    <form action="#"><!--表单容器,action属性指定表单提交到哪里，不写则不提交-->
+        <p>输入方式1：<input placeholder="提示输入内容" type="text"></p>
+
+        <span>输入方式2：</span>
+        <input placeholder="提示输入内容" type="text">
+        <br>
+        <br>
+
+
+        <span>输入方式3：</span>
+        <input placeholder="提示输入内容" type="text" value="直接填入一个值">
+        <br>
+        <br>
+
+
+        <label>输入方式4：</label><!--label是专门为input做标注的标签，仅限于和input对应使用-->
+        <input placeholder="提示输入内容" type="text">
+        <br>
+        <br>
+
+
+        <label>这是一个单选</label>
+        <input type="radio" name="chance">选择1
+        <input type="radio" name="chance">选择2
+        <input type="radio" name="chance">选择3
+        <br>
+        <br>
+
+        <label>这是一个多选</label>  <!--ID属性可以使label和input关联起来，用户点击label时会聚焦到对应的input上-->
+        <input type="checkbox" name="cs">选择1
+        <input type="checkbox" name="cs">选择2
+        <input type="checkbox" name="cs">选择3
+        <br>
+        <br>
+
+
+        <label for="input5">输入方式5：</label>  <!--ID属性可以使label和input关联起来，用户点击label时会聚焦到对应的input上-->
+        <input placeholder="提示输入内容" type="text" id="input5">
+        <br>
+        <br>
+
+
+        <label for="input6">密码输入：</label>  <!--ID属性可以使label和input关联起来，用户点击label时会聚焦到对应的input上-->
+        <input placeholder="提示输入内容" type="password" id="input6">
+        <br>
+        <br>
+
+
+        <input type="submit" value="提交">
+
+
+
+
+    </form>
+    
+</body>
+</html>
