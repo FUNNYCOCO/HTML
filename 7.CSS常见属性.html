@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS常见属性</title>
+    <style>
+        .block{/*块元素可以设置宽高*/
+            background-color: lightseagreen;
+            width: 2000px;
+            height: 40px;
+        }
+        .inline{/*行内元素无法设置宽高*/
+            background-color: lightsalmon;
+        }
+        .inline-block{/*行内块元素可以设置宽高*/
+            background-color: lightblue;
+            width: 175px;
+            height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="font: bolder 25px '微软雅黑'; color: rgb(14, 232, 236);" > 这是一个Font复合属性实例 </h1>
+
+    <p style="line-height: 3;">这是一个长文本，运用了Lineheight属性调节行高,这是一个长文本，运用了Lineheight属性调节行高,这是一个长文本，运用了Lineheight属性调节行高,这是一个长文本，运用了Lineheight属性调节行高,</p>
+
+    <div class="block">这是一个块元素</div>
+    <span class="inline">这是一个行内元素</span>
+    <br><!--不加换行，行内元素和行内块元素会挨在一起-->
+    <img class="inline-block" src="4545.png" alt="这是一个行内块元素" width="248" height="351"><!--这是一个行内块元素-->
+    <img class="inline-block" src="4545.png" alt="这是一个行内块元素" width="248" height="351"><!--这是一个行内块元素-->
+    <!--三种元素可以相互转换-->
+    <div style="display: inline;background-color: blueviolet;">先把块元素转换成行内元素</div>
+    <span style="display: inline-block;background-color: blueviolet;width: 300px;height: 20">再把行内元素转换成行内块元素</span>
+    <img src="4545.png" style="display: block;background-color: blueviolet;width: 300px;height: 20">再把行内块元素转换成块元素</img>
+    <div style="display: inline-block;background-color: blueviolet;width: 200px;height: 20">最后把块元素转换成行内块元素</div>
+    <!--文本居中显示-->
+    <p style="text-align: center;">文字居中显示</p>
+
+</body>
+</html>
