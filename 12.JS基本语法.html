@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS基本语法</title>
+</head>
+<body>
+    <script>
+        // JavaScript代码
+        var a = 1;//变量,有函数作用域
+        let b = 2;//变量,有块级作用域，一般用来替代var
+        const pi = 3.14;//常量
+        let name = "张三";//字符串
+        let empty_value = null;//空值
+        let c ;//未定义
+        console.log(c);//undefined,未定义
+        console.log(name);
+        console.log(empty_value);
+        console.log(a,b,pi);
+        console.log(a + b + pi);
+        var age = 17;
+
+        console.log("if判断，和C好像");
+        if(age < 18){
+            console.log("你是未成年");
+        }else{
+            console.log("你是成年人");
+        }
+
+        console.log("循环语句，和C也很像");
+        for(let i = 1; i < 10 ; i++){
+            console.log(i);
+        }
+
+        let e = 1;
+
+        console.log("循环语句，和C也很像");
+        while(e < 10){
+            console.log(e);
+            e++;
+        }
+        console.log("然后就是break");
+        for(let i = 1; i < 10 ; i++){
+            if(i === 5){
+                break;
+            }
+            console.log(i);
+        }
+        console.log("还有continue");
+        for(let i = 1; i < 10 ;i++){
+            if(i ==2 ){
+                continue;
+            }
+            console.log(i);
+        }
+
+    </script>
+
+</body>
+</html>
