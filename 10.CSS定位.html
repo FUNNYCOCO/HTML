@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS定位</title>
+    <style>
+        .a{
+            height: 150px;
+            background-color: lightslategrey;
+            border-radius: 5px;
+
+        }
+
+        .b{
+            height: 50px;
+            width: 50px;
+            background-color: lightsalmon;
+            border-radius: 5px;
+
+        }
+
+        .c{
+            height: 50px;
+            width: 50px;
+            background-color: rgb(227, 210, 25);
+            border-radius: 5px;
+            position: relative;/*相对位移模式*/
+            left: 50px;/*相对左移50px*/
+        }
+
+        .c2{
+            height: 50px;
+            width: 50px;
+            background-color: rgb(227, 210, 25);
+            border-radius: 5px;
+            position: absolute;/*绝对定位模式*/
+            left: 58px;/*绝对左移58px*/
+        }
+
+         .c3{
+            height: 100px;
+            width: 50px;
+            background-color: rgb(227, 210, 25);
+            border-radius: 5px;
+            position: fixed;/*固定定位模式*/
+            right: 8px;/*绝对右移8%*/
+            bottom: 200px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="a">
+
+        <div class="b">一般块
+
+        </div>
+
+        <div class="c">相对定位
+
+        </div>
+
+        <div class="b">一般块
+
+        </div>
+    </div>
+    <br>
+    <div class="a">
+
+        <div class="b">一般块
+
+        </div>
+
+        <div class="c2">绝对定位
+
+        </div>
+
+        <div class="b">一般块
+
+        </div>
+    </div>
+<br>
+    <div class="a">
+
+        <div class="b">一般块
+
+        </div>
+
+        <div class="c3">固定定位,像是小广告
+
+        </div>
+
+        <div class="b">一般块
+
+        </div>
+    </div>
+
+
+</body>
+</html>
