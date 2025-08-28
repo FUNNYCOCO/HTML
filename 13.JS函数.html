@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>JS函数</title>
+</head>
+<body>
+    <script>
+        console.log("函数的定义和调用");
+        function add(a,b){ //定义函数
+            return a + b;
+        }
+        console.log(add(2, 3)); // 输出 5
+
+        console.log("作用域");
+        var a = 10;
+        var c = 22;
+        function test(b){
+            var c = 20;
+            c = b + 10;
+            console.log(c);
+        }
+        console.log(a); // 输出 10
+        console.log(c); // 输出 22
+
+    </script>
+    
+</body>
+</html>
