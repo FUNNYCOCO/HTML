@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS事件处理</title>
+    <style>
+        button {
+            color: #ffffff;
+            background-color: coral;
+            border: 1px solid orangered;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        input {
+            color: aqua;
+            background-color: rgb(245, 141, 67);
+            border: 1px solid orangered;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        div.mouse-area {
+            font-size: 15px;
+            height: 75px;
+            width: 75px;
+            padding: 50px 50px 50px 50px;
+            border: 1px dashed orangered;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        p{
+            font-size: 15px;
+            width: 175px;
+            border: 1px dashed orangered;
+            border-radius: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="alert('你点击了按钮')">
+        点一下就出一个弹窗
+    </button>
+    <br>
+    <button onclick="tc()">
+        点一下就出一个弹窗
+    </button>
+    <script>
+        function tc(){
+            alert("你点击了按钮");
+        }
+
+    </script>
+    <br>
+
+    <input type="text" placeholder="输入一些文本" onfocus="console.log('获得焦点')" onblur="console.log('失去焦点')">
+    <br>
+    <div class="mouse-area" onmouseover="alert('鼠标移入')" onmouseout="alert('鼠标移出')">
+        鼠标检测区
+    </div>
+
+    <input type="text" value="这是一个默认值" onchange="alert('注意！默认值改变了')">
+    <br>
+    <label onselect="alert('注意！文本被选中')">这是一个文本框</label>单选</label>
+        <input type="radio" name="chance">选择1
+        <input type="radio" name="chance">选择2
+        <input type="radio" name="chance">选择3
+        <br>
+
+
+</body>
+</html>
